@@ -18,7 +18,8 @@ def ping_check(host):
         return True
 
 if __name__ == '__main__':
-  return ping_check('www.google.com')
+  if ping_check('www.google.com'):
+      print 'ping pass'
   
   
   
