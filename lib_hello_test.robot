@@ -1,6 +1,6 @@
 *** Settings ***
-Library       OperatingSystem
-Library
+Library    MyPingLibrary
+
 
 *** Variables ***
 ${MESSAGE}    Hello, world! Ping test
@@ -9,12 +9,10 @@ ${MESSAGE}    Hello, world! Ping test
 My Test
     [Documentation]    Lib Hello test
     Log    ${MESSAGE}
-    My Keyword    /tmp
+    My Keyword    www.google.com
 
-Another Test
-    Should Be Equal    ${MESSAGE}    Hello, world!
 
 *** Keywords ***
 My Keyword
-    [Arguments]    ${path}
-    Directory Should Exist    ${path}
+    [Arguments]    ${test_site}
+    ping_check    ${test_site}
