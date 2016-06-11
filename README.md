@@ -12,6 +12,7 @@
 
 
 # jenkins/robot installation on ubuntu (12.04)
+<pre>
 #!/bin/bash
  
 sudo apt-get update
@@ -50,3 +51,4 @@ sudo pip install lxml
 sudo pip install PyYAML
 sudo pip install docopt
 sudo pip install robotframework-sshlibrary
+</pre>
