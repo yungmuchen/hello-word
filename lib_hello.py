@@ -15,10 +15,10 @@ def ping_check(host):
     if not ping_result:
         raise Exception('ping failed')
     else:
-        return ping_result
+        return True
 
 if __name__ == '__main__':
-  ping_result=ping_check('www.google.com')
-  print ping_result
+  return ping_check('www.google.com')
+  
   
   
